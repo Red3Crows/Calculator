@@ -46,68 +46,12 @@ class Math(commands.Cog):
             res = await self.client.wait_for("button_click", check=check)
             mmd = await res.respond(type=InteractionType.ChannelMessageWithSource,
                                     content=f"{res.component.label} pressed")
-            if res.component.label == "1":
-                math_string = math_string + "1"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "2":
-                math_string = math_string + "2"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "3":
-                math_string = math_string + "3"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "4":
-                math_string = math_string + "4"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "5":
-                math_string = math_string + "5"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "6":
-                math_string = math_string + "6"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "7":
-                math_string = math_string + "7"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "8":
-                math_string = math_string + "8"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "9":
-                math_string = math_string + "9"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "0":
-                math_string = math_string + "0"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "00":
-                math_string = math_string + "00"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "+":
-                math_string = math_string + "+"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "-":
-                math_string = math_string + "-"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == "×":
+            if res.component.label == "×":
                 math_string = math_string + "*"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
             elif res.component.label == "÷":
                 math_string = math_string + "/"
-                Calculator = discord.Embed(title=f"`{math_string}`")
-                await msg.edit(embed=Calculator)
-            elif res.component.label == ".":
-                math_string = math_string + "."
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
             elif res.component.label == "Exit":
@@ -124,6 +68,10 @@ class Math(commands.Cog):
                 await msg.edit(embed=Calculator)
             elif res.component.label == "←":
                 math_string = math_string[:-1]
+                Calculator = discord.Embed(title=f"`{math_string}`")
+                await msg.edit(embed=Calculator)
+            else:
+                math_string += res.component.label
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
 
