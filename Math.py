@@ -50,79 +50,79 @@ class Math(commands.Cog):
                 math_string = math_string + "1"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "2":
+            elif res.component.label == "2":
                 math_string = math_string + "2"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "3":
+            elif res.component.label == "3":
                 math_string = math_string + "3"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "4":
+            elif res.component.label == "4":
                 math_string = math_string + "4"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "5":
+            elif res.component.label == "5":
                 math_string = math_string + "5"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "6":
+            elif res.component.label == "6":
                 math_string = math_string + "6"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "7":
+            elif res.component.label == "7":
                 math_string = math_string + "7"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "8":
+            elif res.component.label == "8":
                 math_string = math_string + "8"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "9":
+            elif res.component.label == "9":
                 math_string = math_string + "9"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "0":
+            elif res.component.label == "0":
                 math_string = math_string + "0"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "00":
+            elif res.component.label == "00":
                 math_string = math_string + "00"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "+":
+            elif res.component.label == "+":
                 math_string = math_string + "+"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "-":
+            elif res.component.label == "-":
                 math_string = math_string + "-"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "×":
+            elif res.component.label == "×":
                 math_string = math_string + "*"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "÷":
+            elif res.component.label == "÷":
                 math_string = math_string + "/"
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == ".":
+            elif res.component.label == ".":
                 math_string = math_string + "."
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "Exit":
+            elif res.component.label == "Exit":
                 await msg.delete()
                 break
-            if res.component.label == "=":
+            elif res.component.label == "=":
                 javab = eval(math_string)
                 math_string = ""
                 Calculator = discord.Embed(title=f"`{javab}`")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "Clear":
+            elif res.component.label == "Clear":
                 math_string = ""
                 Calculator = discord.Embed(title=f"`{math_string} `")
                 await msg.edit(embed=Calculator)
-            if res.component.label == "←":
+            elif res.component.label == "←":
                 math_string = math_string[:-1]
                 Calculator = discord.Embed(title=f"`{math_string}`")
                 await msg.edit(embed=Calculator)
